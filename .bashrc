@@ -130,3 +130,6 @@ complete -C /usr/local/bin/terraform terraform
 
 # Alias for managing my dotfiles in homedir with git
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# Add my homefolder bin to $PATH
+PATH=~/bin:$PATH
