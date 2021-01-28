@@ -138,3 +138,6 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 # Add my homefolder bin to $PATH
 PATH=~/bin:$PATH
+
+# make sure CTRL-S works for searching
+stty -ixon
