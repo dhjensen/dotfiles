@@ -3,3 +3,6 @@
 !.bashrc
 !.gitconfig
 !.gitignore
+!.gnupg
+.gnupg/**
+!.gnupg/gpg-agent.conf
