@@ -3,7 +3,7 @@
 	email = dhjen@outlook.com
 	signingkey = 5BD93A02
 [rerere]
-	enabled = true
+	enabled = false 
 [commit]
 	gpgsign = true
 [status]
