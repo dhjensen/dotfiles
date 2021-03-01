@@ -9,8 +9,15 @@ case $- in
 esac
 
 if command -v tmux >/dev/null 2>&1 && [ "${DISPLAY}" ]; then
-    # if not inside a tmux session, and if no session is started, start a new session
-    [ -z "${TMUX}" ] && (tmux attach -t default || tmux new -s default) >/dev/null 2>&1
+    if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+        SESSION="vscode$PWD"
+        [ -z "${TMUX}" ] && (tmux attach-session -d -t $SESSION -c $PWD|| tmux new-session -s $SESSION -c $PWD)
+    else
+        # if not inside a tmux session, and if no session is started, start a new session
+        [ -z "${TMUX}" ] && (tmux attach -t default || tmux new -s default) >/dev/null 2>&1
+    fi
+else
+    echo "tmux: Not starting or attaching to session"
 fi
 
 # don't put duplicate lines or lines starting with space in the history.
