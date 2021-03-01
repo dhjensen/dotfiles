@@ -148,3 +148,7 @@ PATH=~/bin:$PATH
 
 # make sure CTRL-S works for searching
 stty -ixon
+
+# >>>> Vagrant command completion (start)
+. /opt/vagrant/embedded/gems/2.2.14/gems/vagrant-2.2.14/contrib/bash/completion.sh
+# <<<<  Vagrant command completion (end)
