@@ -6,3 +6,6 @@
 !.gnupg
 .gnupg/**
 !.gnupg/gpg-agent.conf
+!.ssh
+.ssh/**
+!.ssh/config
