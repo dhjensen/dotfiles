@@ -150,5 +150,5 @@ PATH=~/bin:$PATH
 stty -ixon
 
 # >>>> Vagrant command completion (start)
-. /opt/vagrant/embedded/gems/2.2.14/gems/vagrant-2.2.14/contrib/bash/completion.sh
+. /opt/vagrant/embedded/gems/2.2.15/gems/vagrant-2.2.15/contrib/bash/completion.sh
 # <<<<  Vagrant command completion (end)
