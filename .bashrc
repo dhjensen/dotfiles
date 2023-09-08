@@ -145,10 +145,11 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 # Add my homefolder bin to $PATH
 PATH=~/bin:$PATH
+PATH=~/.local/bin:$PATH
 
 # make sure CTRL-S works for searching
 stty -ixon
 
 # >>>> Vagrant command completion (start)
-. /opt/vagrant/embedded/gems/2.2.16/gems/vagrant-2.2.16/contrib/bash/completion.sh
+. /opt/vagrant/embedded/gems/gems/vagrant-2.3.7/contrib/bash/completion.sh 
 # <<<<  Vagrant command completion (end)
