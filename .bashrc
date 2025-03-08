@@ -8,6 +8,8 @@ case $- in
       *) return;;
 esac
 
+neofetch
+
 # Disable the tmux part
 # if command -v tmux >/dev/null 2>&1 && [ "${DISPLAY}" ]; then
 #     if [[ "$TERM_PROGRAM" == "vscode" ]]; then
