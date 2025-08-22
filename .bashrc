@@ -8,7 +8,7 @@ case $- in
       *) return;;
 esac
 
-neofetch
+hyfetch
 
 # Disable the tmux part
 # if command -v tmux >/dev/null 2>&1 && [ "${DISPLAY}" ]; then
