@@ -143,17 +143,6 @@ fi
 
 complete -C /usr/bin/terraform terraform
 
-#function wormhole() {
-#    case $1 in
-#        send | receive | send-many)
-#            wormhole-rs $1 --relay-server tcp://relay.mw.leastauthority.com:4001 $2 $3 $4
-#            ;;
-#        *)
-#            wormhole-rs $1 $2 $3 $4
-#            ;;
-#    esac
-#}
-
 # Alias for managing my dotfiles in homedir with git
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
