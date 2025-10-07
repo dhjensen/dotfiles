@@ -1,0 +1,35 @@
+{
+    "workbench.colorTheme": "Default High Contrast",
+    "terminal.integrated.automationProfile.linux": {},
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+          "path": "/usr/bin/flatpak-spawn",
+          "args": ["--host", "--env=TERM=xterm", "bash"],
+          "icon": "terminal-bash",
+          "overrideName": true
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.tabSize": 2,
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "containers.orchestratorClient": "com.microsoft.visualstudio.orchestrators.dockercompose",
+    "git.enableCommitSigning": true,
+    "git.enableSmartCommit": true,
+    "git.pullTags": false,
+    "git.confirmSync": false,
+    "editor.codeActionsOnSave": {}
+}
