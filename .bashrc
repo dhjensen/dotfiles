@@ -143,8 +143,13 @@ fi
 
 complete -C /usr/bin/terraform terraform
 
-# Alias for managing my dotfiles in homedir with git
-# alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+function dot() {
+  if [ "$PWD" = "$HOME" ]; then
+    git --git-dir=$HOME/.dotfiles --work-tree=$HOME "$@"
+  else
+    git "$@"
+  fi
+}
 
 # Codium as flatpak
 alias code="flatpak run com.vscodium.codium "
