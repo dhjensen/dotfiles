@@ -9,3 +9,16 @@
 !.ssh
 .ssh/**
 !.ssh/config
+!.var
+.var/**
+!.var/app
+.var/app/**
+!.var/app/com.vscodium.codium
+.var/app/com.vscodium.codium/**
+!.var/app/com.vscodium.codium/config
+.var/app/com.vscodium.codium/config/**
+!.var/app/com.vscodium.codium/config/VSCodium
+.var/app/com.vscodium.codium/config/VSCodium/**
+!.var/app/com.vscodium.codium/config/VSCodium/User
+.var/app/com.vscodium.codium/config/VSCodium/User/**
+!.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
