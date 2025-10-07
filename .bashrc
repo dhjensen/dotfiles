@@ -144,11 +144,16 @@ fi
 complete -C /usr/bin/terraform terraform
 
 # Alias for managing my dotfiles in homedir with git
-alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+# alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# Codium as flatpak
+alias code="flatpak run com.vscodium.codium "
 
 # Add my homefolder bin to $PATH
 PATH=~/bin:$PATH
 PATH=~/.local/bin:$PATH
+# golang
+export PATH=$PATH:/usr/local/go/bin
 
 # make sure CTRL-S works for searching
 stty -ixon
