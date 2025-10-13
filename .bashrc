@@ -131,6 +131,17 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Arch show git branches
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
+  . /usr/share/git/completion/git-prompt.sh
+
+  export GIT_PS1_SHOWDIRTYSTATE=yes
+  export GIT_PS1_SHOWUNTRACKEDFILES=yes
+  export GIT_PS1_SHOWCOLORHINTS=yes
+
+  PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+fi
+
 # Show git branches
 if [ -f /usr/lib/git-core/git-sh-prompt ]; then
   # shellcheck disable=SC1091
@@ -151,8 +162,8 @@ function dot() {
   fi
 }
 
-# Codium as flatpak
-alias code="flatpak run com.vscodium.codium "
+export EDITOR='nano'
+export VISUAL='nano'
 
 # Add my homefolder bin to $PATH
 PATH=~/bin:$PATH
