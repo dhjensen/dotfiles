@@ -162,6 +162,8 @@ function dot() {
   fi
 }
 
+export WINAPPS_SRC_DIR="$HOME/.local/bin/winapps-src"
+
 export EDITOR='nano'
 export VISUAL='nano'
 
