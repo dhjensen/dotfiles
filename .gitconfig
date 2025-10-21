@@ -1,7 +1,7 @@
 [user]
 	name = Daniel Jensen
-	email = dhjen@outlook.com
-	signingkey = 5BD93A02
+	email = dhj@dhjensen.dk
+	signingkey = D778552024E940AE
 [rerere]
 	enabled = false 
 [commit]
